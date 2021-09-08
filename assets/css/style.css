@@ -9,6 +9,30 @@
           box-sizing: border-box;
 }
 
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.start img {
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 800px;
+}
+.start p {
+	margin: 50vh auto 0;
+	transform: translateY(-50%);
+  text-align: center;
+  display: none;
+
+}
+
 html {
   font-size: 18px;
   -webkit-box-sizing: border-box;
