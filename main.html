@@ -48,12 +48,7 @@ function addTF(str)
               <figure class="image__container">
                 <img src="assets/images/stagegege1.png" alt="">
               </figure>
-              <form name="faceForm">
-              <input type="text" name="face"><br>
-              <input type="button" value="(^^)" onClick="addTF(this.value)"><br>
-              <input type="button" value="(T_T)" onClick="addTF(this.value)"><br>
-              <input type="button" value="(^ω^)" onClick="addTF(this.value)"><br>
-              </form>
+
                 
  <!--  YouTube貼り付け
               <div class="youtube__container">
@@ -82,6 +77,12 @@ Youtube貼り付けここまで -->
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+		 <form name="faceForm">
+              <input type="text" name="face"><br>
+              <input type="button" value="(^^)" onClick="addTF(this.value)"><br>
+              <input type="button" value="(T_T)" onClick="addTF(this.value)"><br>
+              <input type="button" value="(^ω^)" onClick="addTF(this.value)"><br>
+              </form>
 
             <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
             
