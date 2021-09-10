@@ -78,6 +78,8 @@ Youtube貼り付けここまで -->
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+<div class="answer__container">
+      <div class="answer">
 		 <form name="faceForm">
 	<input type="text" name="face" maxlength="4" v-model="inputAnswer" placeholder="ここに答えを入力しよう">
               <input type="button" value="1" onClick="addTF(this.value)">
@@ -93,9 +95,11 @@ Youtube貼り付けここまで -->
 			 
               </form>
 
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
-            
-          </div>
+      </div>
+      <p v-if="message === ngMessage" class="err-message">{{ message }}</p>
+      <button v-on:click="judgement(inputAnswer)">送信する</button>
+      <p v-if="message === okMessage" class="err-message">{{ message }}</p>
+    　　　　</div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
 
