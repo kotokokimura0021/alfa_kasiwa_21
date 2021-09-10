@@ -108,9 +108,8 @@ app.component('answer-input', {
   template: `
     <div class="answer__container">
       <div class="answer">
+      <form name="faceForm">
         <input type="text" name="face" v-model="inputAnswer" placeholder="ここに答えを入力しよう">
-        <form name="faceForm">
-<input type="text" name="face"><br>
 <input type="button" value="(^^)" onClick="addTF(this.value)"><br>
 <input type="button" value="(T_T)" onClick="addTF(this.value)"><br>
 <input type="button" value="(^ω^)" onClick="addTF(this.value)"><br>
