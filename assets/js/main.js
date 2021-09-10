@@ -105,6 +105,12 @@ app.component('answer-input', {
       inputAnswer: '',
     }
   },
+  
+  function addTF(str)
+{
+	document.faceForm.face.value += str;
+}
+
   template: `
     <div class="answer__container">
       <div class="answer">
