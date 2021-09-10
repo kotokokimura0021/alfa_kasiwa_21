@@ -42,6 +42,12 @@
               <figure class="image__container">
                 <img src="assets/images/stagegege1.png" alt="">
               </figure>
+              <form name="faceForm">
+              <input type="text" name="face"><br>
+              <input type="button" value="(^^)" onClick="addTF(this.value)"><br>
+              <input type="button" value="(T_T)" onClick="addTF(this.value)"><br>
+              <input type="button" value="(^ω^)" onClick="addTF(this.value)"><br>
+              </form>
                 
  <!--  YouTube貼り付け
               <div class="youtube__container">
@@ -59,6 +65,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
+            
             <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>数字4ケタの解除キーを入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
@@ -71,6 +78,7 @@ Youtube貼り付けここまで -->
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
             <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+            
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
