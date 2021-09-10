@@ -80,10 +80,6 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-      <p v-if="message === ngMessage" class="err-message">{{ message }}</p>
-      <button v-on:click="judgement(inputAnswer)">送信する</button>
-      <p v-if="message === okMessage" class="err-message">{{ message }}</p>
-    　　　　</div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
 
