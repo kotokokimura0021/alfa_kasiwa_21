@@ -106,20 +106,11 @@ app.component('answer-input', {
     }
   },
   
-  function addTF(str)
-{
-	document.faceForm.face.value += str;
-}
 
   template: `
     <div class="answer__container">
       <div class="answer">
-      <form name="faceForm">
         <input type="text" name="face" v-model="inputAnswer" placeholder="ここに答えを入力しよう">
-<input type="button" value="(^^)" onClick="addTF(this.value)"><br>
-<input type="button" value="(T_T)" onClick="addTF(this.value)"><br>
-<input type="button" value="(^ω^)" onClick="addTF(this.value)"><br>
-</form>
       </div>
       <p v-if="message === ngMessage" class="err-message">{{ message }}</p>
       <button v-on:click="judgement(inputAnswer)">送信する</button>
