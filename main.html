@@ -34,10 +34,15 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">また、不思議な部屋に飛ばされてしまったらしい。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">第一幕</span>〜夢のはじまり〜</h2>
+            <p class="text-center">「ねぇ、あそびましょ。」<br>
+              また、いつもの夢だ。気がつくと、薄暗い部屋の中にいる。そして、「あそびましょ。ふふふ、あそびましょ。」少女の声が聞こえてくる。<br>
+              「今日は、なぞなぞで、あそびましょ。」目の前に少女が現れる。「なぞなぞは、全部でみっつ。時間内に解けたらあなたの勝ち。」<br>
+              「解けなかったら...もっともっとあそんでもらうわ.........ふふふ。」そう言って、少女は消えてしまった。ガチャリ。部屋の鍵がかかる。<br>
+              部屋の中には、静かに動く砂時計と、一枚の紙、そしてあなたが残された。<br>
+              ドアの鍵は、4桁の数字を入れると開く、ダイヤルロック式だ。紙に書かれた謎を解いて、この部屋から脱出せよ。</p>
+              
+            <p class="text-center">付属の花札メモを見ながら解きましょう。困ったときは、ヒントを見ることをおすすめします。</p>
   
             <div class="container">
               <figure class="image__container">
@@ -88,10 +93,10 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">第一幕　クリア</div>
+              <div class="clear-message__content">扉の鍵が開いた！<br>
+                「あら、できちゃったのねーーーーー次のなぞなぞに、いってらっしゃい。」<br>
+                少女が現れ、扉を開ける。</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -110,9 +115,9 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">第二幕</span>夢のつながり</h2>
+              <p class="text-center">次の部屋に入ると、そこは、どこか見覚えのある部屋だった。<br>
+                すぐに目に入ったのは床に置いてある一枚の紙。<br>
                 これらを解くことで、きっと次のステップに繋がるはずだ！</p>
             </div>
           </div>
