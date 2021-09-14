@@ -221,6 +221,12 @@ button {
   text-align: center;
 }
 
+
+.hint-page .ccard__content .card__content {
+  display: none;
+  text-align: left;
+}
+
 .hint-page .card__arrow {
   position: absolute;
   top: calc(50% - 12px);
