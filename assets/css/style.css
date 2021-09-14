@@ -448,6 +448,14 @@ button {
   margin: 0;
 }
 
+.gazou{
+  background-image:url("assets/imeges/gazou.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-size:contain;
+　　　　color:#fff;
+}
+
 .story__note__outer {
   width: 860px;
   display: -webkit-box;
