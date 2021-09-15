@@ -280,7 +280,7 @@ button {
 }
 
 .bg-color--subcolor {
-  background-color: #8a8a87;
+  background-color: #e6e6e6;
 }
 
 
@@ -480,7 +480,7 @@ button {
 }
 
 .stage-column__container + .stage-column__container {
-  border-top: 2px solid #fff;
+  border-top: 2px solidfff;
 }
 
 .answer {
